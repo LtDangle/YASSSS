@@ -6,6 +6,16 @@ target 'YASSSS' do
   use_frameworks!
 
   # Pods for YASSSS
+ 	pod 'Firebase/Core'
+	pod 'Firebase/Auth'
+	pod 'Firebase/Database'
+	pod 'FirebaseUI'
+	pod 'FirebaseUI/Google'
+	pod 'FirebaseUI/Facebook'
+	pod 'FirebaseUI/Twitter'
+	pod 'FirebaseUI/Phone'
+	pod 'SwiftKeychainWrapper'
+
 
   target 'YASSSSTests' do
     inherit! :search_paths
