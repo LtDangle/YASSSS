@@ -15,7 +15,6 @@
 		81CDE1A91FD306EE007F4588 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81CDE1A71FD306EE007F4588 /* LaunchScreen.storyboard */; };
 		81CDE1B41FD306EE007F4588 /* YASSSSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CDE1B31FD306EE007F4588 /* YASSSSTests.swift */; };
 		81CDE1BF1FD306EE007F4588 /* YASSSSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CDE1BE1FD306EE007F4588 /* YASSSSUITests.swift */; };
-		81CDE1CD1FD3231A007F4588 /* FrontPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CDE1CC1FD3231A007F4588 /* FrontPageViewController.swift */; };
 		CC373D0DAD35D81F5D62EC41 /* Pods_YASSSSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A96B2BB0BE766D09E801C48 /* Pods_YASSSSUITests.framework */; };
 		D0C53153E6B5F5FE6B66D4C8 /* Pods_YASSSSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F448A60B3449A1510CBA5868 /* Pods_YASSSSTests.framework */; };
 /* End PBXBuildFile section */
@@ -56,7 +55,6 @@
 		81CDE1BA1FD306EE007F4588 /* YASSSSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YASSSSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		81CDE1BE1FD306EE007F4588 /* YASSSSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YASSSSUITests.swift; sourceTree = "<group>"; };
 		81CDE1C01FD306EE007F4588 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		81CDE1CC1FD3231A007F4588 /* FrontPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontPageViewController.swift; sourceTree = "<group>"; };
 		A526FE611E1434921A62410A /* Pods-YASSSS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YASSSS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YASSSS/Pods-YASSSS.debug.xcconfig"; sourceTree = "<group>"; };
 		B906C44FF54D0F7AFE9F813B /* Pods_YASSSS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YASSSS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D63F20625FA631A8F7EE726A /* Pods-YASSSSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YASSSSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YASSSSTests/Pods-YASSSSTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -118,7 +116,6 @@
 			children = (
 				81CDE19E1FD306EE007F4588 /* AppDelegate.swift */,
 				81CDE1A01FD306EE007F4588 /* ViewController.swift */,
-				81CDE1CC1FD3231A007F4588 /* FrontPageViewController.swift */,
 				81CDE1A21FD306EE007F4588 /* Main.storyboard */,
 				81CDE1A51FD306EE007F4588 /* Assets.xcassets */,
 				81CDE1A71FD306EE007F4588 /* LaunchScreen.storyboard */,
@@ -458,7 +455,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81CDE1CD1FD3231A007F4588 /* FrontPageViewController.swift in Sources */,
 				81CDE1A11FD306EE007F4588 /* ViewController.swift in Sources */,
 				81CDE19F1FD306EE007F4588 /* AppDelegate.swift in Sources */,
 			);
