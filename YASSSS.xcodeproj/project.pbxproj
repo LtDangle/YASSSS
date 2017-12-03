@@ -17,6 +17,14 @@
 		81CDE1BF1FD306EE007F4588 /* YASSSSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CDE1BE1FD306EE007F4588 /* YASSSSUITests.swift */; };
 		CC373D0DAD35D81F5D62EC41 /* Pods_YASSSSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A96B2BB0BE766D09E801C48 /* Pods_YASSSSUITests.framework */; };
 		D0C53153E6B5F5FE6B66D4C8 /* Pods_YASSSSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F448A60B3449A1510CBA5868 /* Pods_YASSSSTests.framework */; };
+		D222E8CF1FD3613900F12822 /* Issue.json in Resources */ = {isa = PBXBuildFile; fileRef = D222E8CE1FD3613900F12822 /* Issue.json */; };
+		D222E8D11FD361DA00F12822 /* Issues.swift in Sources */ = {isa = PBXBuildFile; fileRef = D222E8D01FD361DA00F12822 /* Issues.swift */; };
+		D222E8D31FD364EA00F12822 /* Submission.swift in Sources */ = {isa = PBXBuildFile; fileRef = D222E8D21FD364EA00F12822 /* Submission.swift */; };
+		D222E8D51FD3650800F12822 /* SubmissionAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D222E8D41FD3650800F12822 /* SubmissionAPIClient.swift */; };
+		D222E8D71FD3651100F12822 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D222E8D61FD3651100F12822 /* NetworkHelper.swift */; };
+		D222E8D91FD3698200F12822 /* IssuesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D222E8D81FD3698200F12822 /* IssuesViewController.swift */; };
+		D222E8DB1FD3714300F12822 /* IssuesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D222E8DA1FD3714300F12822 /* IssuesDetailViewController.swift */; };
+		D222E8DD1FD376B600F12822 /* ImageAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D222E8DC1FD376B600F12822 /* ImageAPIClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +65,14 @@
 		81CDE1C01FD306EE007F4588 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A526FE611E1434921A62410A /* Pods-YASSSS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YASSSS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YASSSS/Pods-YASSSS.debug.xcconfig"; sourceTree = "<group>"; };
 		B906C44FF54D0F7AFE9F813B /* Pods_YASSSS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YASSSS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D222E8CE1FD3613900F12822 /* Issue.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Issue.json; sourceTree = "<group>"; };
+		D222E8D01FD361DA00F12822 /* Issues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Issues.swift; sourceTree = "<group>"; };
+		D222E8D21FD364EA00F12822 /* Submission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Submission.swift; sourceTree = "<group>"; };
+		D222E8D41FD3650800F12822 /* SubmissionAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmissionAPIClient.swift; sourceTree = "<group>"; };
+		D222E8D61FD3651100F12822 /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
+		D222E8D81FD3698200F12822 /* IssuesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssuesViewController.swift; sourceTree = "<group>"; };
+		D222E8DA1FD3714300F12822 /* IssuesDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssuesDetailViewController.swift; sourceTree = "<group>"; };
+		D222E8DC1FD376B600F12822 /* ImageAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAPIClient.swift; sourceTree = "<group>"; };
 		D63F20625FA631A8F7EE726A /* Pods-YASSSSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YASSSSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YASSSSTests/Pods-YASSSSTests.release.xcconfig"; sourceTree = "<group>"; };
 		F448A60B3449A1510CBA5868 /* Pods_YASSSSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YASSSSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -116,10 +132,18 @@
 			children = (
 				81CDE19E1FD306EE007F4588 /* AppDelegate.swift */,
 				81CDE1A01FD306EE007F4588 /* HomeViewController.swift */,
+				D222E8D81FD3698200F12822 /* IssuesViewController.swift */,
+				D222E8D01FD361DA00F12822 /* Issues.swift */,
 				81CDE1A21FD306EE007F4588 /* Main.storyboard */,
+				D222E8DA1FD3714300F12822 /* IssuesDetailViewController.swift */,
+				D222E8DC1FD376B600F12822 /* ImageAPIClient.swift */,
+				D222E8CE1FD3613900F12822 /* Issue.json */,
 				81CDE1A51FD306EE007F4588 /* Assets.xcassets */,
 				81CDE1A71FD306EE007F4588 /* LaunchScreen.storyboard */,
 				81CDE1AA1FD306EE007F4588 /* Info.plist */,
+				D222E8D21FD364EA00F12822 /* Submission.swift */,
+				D222E8D41FD3650800F12822 /* SubmissionAPIClient.swift */,
+				D222E8D61FD3651100F12822 /* NetworkHelper.swift */,
 			);
 			path = YASSSS;
 			sourceTree = "<group>";
@@ -284,6 +308,7 @@
 				81CDE1A91FD306EE007F4588 /* LaunchScreen.storyboard in Resources */,
 				81CDE1A61FD306EE007F4588 /* Assets.xcassets in Resources */,
 				81CDE1A41FD306EE007F4588 /* Main.storyboard in Resources */,
+				D222E8CF1FD3613900F12822 /* Issue.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,8 +480,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D222E8D51FD3650800F12822 /* SubmissionAPIClient.swift in Sources */,
 				81CDE1A11FD306EE007F4588 /* HomeViewController.swift in Sources */,
+				D222E8DB1FD3714300F12822 /* IssuesDetailViewController.swift in Sources */,
 				81CDE19F1FD306EE007F4588 /* AppDelegate.swift in Sources */,
+				D222E8D11FD361DA00F12822 /* Issues.swift in Sources */,
+				D222E8D71FD3651100F12822 /* NetworkHelper.swift in Sources */,
+				D222E8DD1FD376B600F12822 /* ImageAPIClient.swift in Sources */,
+				D222E8D31FD364EA00F12822 /* Submission.swift in Sources */,
+				D222E8D91FD3698200F12822 /* IssuesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
