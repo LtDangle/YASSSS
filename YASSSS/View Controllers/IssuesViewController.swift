@@ -9,9 +9,9 @@
 import UIKit
 
 class IssuesViewController: UIViewController {
+    private let refreshControl = UIRefreshControl()
     
     @IBOutlet weak var tableView: UITableView!
-    
     var submissions = [Submission]() {
         didSet {
             self.tableView.reloadData()
@@ -20,16 +20,23 @@ class IssuesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        loadSubmissionsData()
         self.tableView.dataSource = self
+        //pull to refresh
+        self.refreshControl.addTarget(self, action: #selector(refreshSubmissions(_:)), for: UIControlEvents.valueChanged)
+        tableView.refreshControl = refreshControl
+        loadSubmissionsData()
+    }
+    
+    @objc private func refreshSubmissions(_ sender: Any) {
+        loadSubmissionsData()
     }
     
     func loadSubmissionsData() {
         let urlStr = "https://yassss-ae86.restdb.io/rest/submissions?apikey=22bbac2fbe3f6958760e48ba1be97907648ba"
         let setSubmissionToOnlineSubmissions: ([Submission]) -> Void = { (onlineSubmissions: [Submission]) in
             self.submissions = onlineSubmissions
+            self.tableView.reloadData()
+            self.refreshControl.endRefreshing()
         }
         SubmissionAPIClient.manager.getSubmissions(from: urlStr,
                                                    completionHandler: setSubmissionToOnlineSubmissions,

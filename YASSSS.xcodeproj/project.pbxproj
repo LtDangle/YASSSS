@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		6CF7F6F37557251509AAEC57 /* Pods_YASSSS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B906C44FF54D0F7AFE9F813B /* Pods_YASSSS.framework */; };
 		81CDE19F1FD306EE007F4588 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CDE19E1FD306EE007F4588 /* AppDelegate.swift */; };
-		81CDE1A11FD306EE007F4588 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CDE1A01FD306EE007F4588 /* HomeViewController.swift */; };
+		81CDE1A11FD306EE007F4588 /* SubmissionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CDE1A01FD306EE007F4588 /* SubmissionsViewController.swift */; };
 		81CDE1A41FD306EE007F4588 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81CDE1A21FD306EE007F4588 /* Main.storyboard */; };
 		81CDE1A61FD306EE007F4588 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81CDE1A51FD306EE007F4588 /* Assets.xcassets */; };
 		81CDE1A91FD306EE007F4588 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81CDE1A71FD306EE007F4588 /* LaunchScreen.storyboard */; };
@@ -52,7 +52,7 @@
 		7A96B2BB0BE766D09E801C48 /* Pods_YASSSSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YASSSSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81CDE19B1FD306EE007F4588 /* YASSSS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YASSSS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81CDE19E1FD306EE007F4588 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		81CDE1A01FD306EE007F4588 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		81CDE1A01FD306EE007F4588 /* SubmissionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmissionsViewController.swift; sourceTree = "<group>"; };
 		81CDE1A31FD306EE007F4588 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		81CDE1A51FD306EE007F4588 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81CDE1A81FD306EE007F4588 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -130,20 +130,10 @@
 		81CDE19D1FD306EE007F4588 /* YASSSS */ = {
 			isa = PBXGroup;
 			children = (
-				81CDE19E1FD306EE007F4588 /* AppDelegate.swift */,
-				81CDE1A01FD306EE007F4588 /* HomeViewController.swift */,
-				D222E8D81FD3698200F12822 /* IssuesViewController.swift */,
-				D222E8D01FD361DA00F12822 /* Issues.swift */,
-				81CDE1A21FD306EE007F4588 /* Main.storyboard */,
-				D222E8DA1FD3714300F12822 /* IssuesDetailViewController.swift */,
-				D222E8DC1FD376B600F12822 /* ImageAPIClient.swift */,
-				D222E8CE1FD3613900F12822 /* Issue.json */,
-				81CDE1A51FD306EE007F4588 /* Assets.xcassets */,
-				81CDE1A71FD306EE007F4588 /* LaunchScreen.storyboard */,
+				D22346951FDCAD7C007715D0 /* Models */,
+				D22346941FDCAD59007715D0 /* View Controllers */,
+				D22346961FDCADA3007715D0 /* Supporting Files */,
 				81CDE1AA1FD306EE007F4588 /* Info.plist */,
-				D222E8D21FD364EA00F12822 /* Submission.swift */,
-				D222E8D41FD3650800F12822 /* SubmissionAPIClient.swift */,
-				D222E8D61FD3651100F12822 /* NetworkHelper.swift */,
 			);
 			path = YASSSS;
 			sourceTree = "<group>";
@@ -164,6 +154,40 @@
 				81CDE1C01FD306EE007F4588 /* Info.plist */,
 			);
 			path = YASSSSUITests;
+			sourceTree = "<group>";
+		};
+		D22346941FDCAD59007715D0 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D222E8D81FD3698200F12822 /* IssuesViewController.swift */,
+				D222E8DA1FD3714300F12822 /* IssuesDetailViewController.swift */,
+				81CDE1A01FD306EE007F4588 /* SubmissionsViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		D22346951FDCAD7C007715D0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D222E8D01FD361DA00F12822 /* Issues.swift */,
+				D222E8DC1FD376B600F12822 /* ImageAPIClient.swift */,
+				D222E8D21FD364EA00F12822 /* Submission.swift */,
+				D222E8D41FD3650800F12822 /* SubmissionAPIClient.swift */,
+				D222E8CE1FD3613900F12822 /* Issue.json */,
+				D222E8D61FD3651100F12822 /* NetworkHelper.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D22346961FDCADA3007715D0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				81CDE1A21FD306EE007F4588 /* Main.storyboard */,
+				81CDE1A51FD306EE007F4588 /* Assets.xcassets */,
+				81CDE19E1FD306EE007F4588 /* AppDelegate.swift */,
+				81CDE1A71FD306EE007F4588 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		EF2357F6ECF5A83EABE3837B /* Pods */ = {
@@ -481,7 +505,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D222E8D51FD3650800F12822 /* SubmissionAPIClient.swift in Sources */,
-				81CDE1A11FD306EE007F4588 /* HomeViewController.swift in Sources */,
+				81CDE1A11FD306EE007F4588 /* SubmissionsViewController.swift in Sources */,
 				D222E8DB1FD3714300F12822 /* IssuesDetailViewController.swift in Sources */,
 				81CDE19F1FD306EE007F4588 /* AppDelegate.swift in Sources */,
 				D222E8D11FD361DA00F12822 /* Issues.swift in Sources */,

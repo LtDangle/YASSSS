@@ -17,5 +17,8 @@ struct Issue: Codable {
     let description: String
     
 }
-
+enum HTTPVerb: String {
+    case GET
+    case POST
+}
 
